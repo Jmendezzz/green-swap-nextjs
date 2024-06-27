@@ -1,13 +1,14 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { Navigation } from "./components/ui/Navigation";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import { Navigation } from '../components/ui/nav/Navigation';
+import { Footer } from '../components/ui/footer/Footer';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Green Swap",
-  description: "A marketplace for sustainable products, exchange, and more.",
+  title: 'Green Swap',
+  description: 'A marketplace for sustainable products, exchange, and more.',
 };
 
 export default function RootLayout({
@@ -18,12 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navigation />
-        <main className="container mx-auto p-4">
 
-        {children}
+        <Navigation />
+        <main>
+          {children}
         </main>
-        </body>
+        <Footer />
+      </body>
     </html>
   );
 }
