@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export function Footer() {
   return (
-    <div className='row gap-10 text-white'>
+    <footer className='row gap-10 text-white bg-bg-100 p-10'>
         <div>
             <Logo/>
         </div>
@@ -23,7 +23,7 @@ export function Footer() {
             </ul>
 
         </div>
-    </div>
+    </footer>
   )
 }
 
