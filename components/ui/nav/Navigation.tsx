@@ -23,7 +23,7 @@ export function Navigation() {
 
   return (
     <nav
-      className={`row fixed top-0 z-10  items-center justify-between py-5 px-20 duration-300 transition-all  w-full ${
+      className={`row fixed top-0 z-10  items-center justify-between py-5 px-20 duration-300 transition-all-[50ms]  w-full ${
         isTransparent ? 'bg-transparent text-white py-2' : 'bg-bg-100'
       }`}
     >
